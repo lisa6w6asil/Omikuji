@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/result_img"
+        android:layout_width="917dp"
+        android:layout_height="742dp"
+        android:layout_gravity="center"
+        android:src="@drawable/omikuji_daikichi" />
+    <ImageView
+        android:id="@+id/woman_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center|left"
+        android:src="@drawable/pose_dance_ukareru_woman" />
+    <ImageView
+        android:id="@+id/man_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center|right"
+        android:src="@drawable/pose_dance_ukareru_man1" />
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8b0000"
+        android:text="@string/back"
+        android:layout_gravity="center|center_horizontal" />
+
+</FrameLayout>

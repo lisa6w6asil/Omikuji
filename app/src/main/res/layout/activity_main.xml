@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result_bg"
+    tools:context=".MainActivity">
+    <!--tate-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- yoko image*3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/engi_mark01_matsu" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/engi_mark02_take" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/engi_mark03_ume" />
+        </LinearLayout>
+        <!-- frame image Button-->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_weight="1"
+                android:layout_gravity="top|left"
+                android:background="@drawable/fantasy_kouryu_dragon1" />
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/nenga_mark14_daruma1" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/omikuji"
+                android:rotation="20" />
+            <ImageView
+                android:id="@+id/start_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tabi_start"
+                android:layout_gravity="bottom|center_horizontal" />
+
+        </FrameLayout>
+        <!-- yoko image*3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/engi_mark01_matsu" />
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/engi_mark02_take" />
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/engi_mark03_ume" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">おみくじ</string>
+    <string name="start">スタート</string>
+    <string name="back">もどる</string>
+</resources>
