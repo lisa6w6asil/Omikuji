@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,9 +14,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Random;
+
 public class ResultActivity extends AppCompatActivity {
+
+
+
+
+
+
+
+
+
     //おみくじの数
-    public static final int MAX_OMIKUJI_COUNT = 7;
+    public static final int MAX_OMIKUJI_COUNT = 12;
 
     private static final int ERROR_CODE = -1;
 
@@ -35,6 +47,14 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
+        Button backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         //Image
         omikujiImageView = findViewById(R.id.result_img);
         womanImageView = findViewById(R.id.woman_img);
@@ -49,23 +69,28 @@ public class ResultActivity extends AppCompatActivity {
                 isHuman = true;
                 imageResId = R.drawable.omikuji_daikichi;
                 break;
-            case 1://中吉
+            case 1:
+            case 7://中吉
                 isHuman = true;
                 imageResId = R.drawable.omikuji_chuukichi;
                 break;
-            case 2://小吉
+            case 2:
+            case 8://小吉
                 isHuman = true;
                 imageResId = R.drawable.omikuji_syoukichi;
                 break;
-            case 3://吉
+            case 3:
+            case 9://吉
                 isHuman = true;
                 imageResId = R.drawable.omikuji_kichi;
                 break;
-            case 4://末吉
+            case 4:
+            case 10://末吉
                 isHuman = false;
                 imageResId = R.drawable.omikuji_suekichi;
                 break;
-            case 5://凶
+            case 5:
+            case 11://凶
                 isHuman = false;
                 imageResId = R.drawable.omikuji_kyou;
                 break;
